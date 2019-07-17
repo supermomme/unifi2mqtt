@@ -9,5 +9,6 @@
     "user": "UNIFI_USER",
     "password": "UNIFI_PASSWORD",
     "site": "UNIFI_SITE"
-  }
+  },
+  "insecure": "INSECURE"
 }
