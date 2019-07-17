@@ -1,9 +1,7 @@
-FROM node
-WORKDIR /unifi2mqtt
+FROM node:10.9.0-alpine
+WORKDIR /app
 COPY package*.json ./
-RUN npm install
-
+RUN npm ci
 COPY . .
-
-CMD node index.js
-#pass arguments like docker run -e "insecure=true" -e "unifi-password=supersekrit" ...
+ENV NODE_ENV="docker"
+CMD ["npm", "start"]

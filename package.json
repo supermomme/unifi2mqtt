@@ -1,46 +1,29 @@
 {
   "name": "unifi2mqtt",
-  "version": "1.1.0",
-  "description": "Connect Ubiquiti UniFi controller to MQTT",
+  "version": "0.0.0",
+  "description": "Connect Ubiquiti UniFi controller to MQTT via docker",
   "main": "index.js",
-  "bin": {
-    "unifi2mqtt": "index.js"
-  },
-  "preferGlobal": true,
-  "engines": {
-    "node": ">=6.0.0"
-  },
   "scripts": {
-    "test": "camo-purge ; xo"
+    "test": "exit 0;",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hobbyquaker/unifi2mqtt"
+    "url": "https://github.com/supermomme/unifi2mqtt"
   },
-  "keywords": [
-    "mqtt",
-    "smarthome",
-    "unifi",
-    "ubiquiti",
-    "clients"
+  "authors": [
+    "Momme Jürgensen <momme@juergensen.me> (https://github.com/supermomme)",
+    "Sebastian Raff <hobbyquaker@gmail.com> (https://github.com/hobbyquaker)"
   ],
-  "author": "Sebastian Raff <hobbyquaker@gmail.com> (https://github.com/hobbyquaker)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hobbyquaker/unifi2mqtt/issues"
+    "url": "https://github.com/supermomme/unifi2mqtt/issues"
   },
-  "homepage": "https://github.com/hobbyquaker/unifi2mqtt",
+  "homepage": "https://github.com/supermomme/unifi2mqtt",
   "dependencies": {
+    "config": "^3.2.0",
     "mqtt": "^2.18.3",
     "ubnt-unifi": "^1.0.0",
-    "yalm": "^4.1.0",
-    "yargs": "^12.0.1"
-  },
-  "devDependencies": {
-    "camo-purge": "latest",
-    "xo": "^0.21.1"
-  },
-  "xo": {
-    "space": 4
+    "yalm": "^4.1.0"
   }
 }

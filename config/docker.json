@@ -1,0 +1,13 @@
+{
+  "mqtt": {
+    "url": "MQTT_URL",
+    "username": "MQTT_USERNAME",
+    "password": "MQTT_PASSWORD"
+  },
+  "unifi": {
+    "host": "UNIFI_HOST",
+    "user": "UNIFI_USER",
+    "password": "UNIFI_PASSWORD",
+    "site": "UNIFI_SITE"
+  }
+}

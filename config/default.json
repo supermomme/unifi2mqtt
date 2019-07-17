@@ -1,0 +1,21 @@
+{
+  "mqtt": {
+    "url": "mqtt://127.0.0.1",
+    "username": "",
+    "password": "",
+    "topic": "unifi"
+  },
+  "unifi": {
+    "host": "127.0.0.1",
+    "port": 8443,
+    "user": "admin",
+    "password": "",
+    "site": "default"
+  },
+  
+  "verbosity": "info",
+  "verbosity_comment":"possible values: 'error', 'warn', 'info', 'debug'",
+  
+  "insecure": false,
+  "insecure_comment": "allow ssl connections with invalid certs"
+}
