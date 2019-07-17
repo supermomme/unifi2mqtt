@@ -3,5 +3,5 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm ci
 COPY . .
-ENV NODE_ENV="docker"
+ENV NODE_ENV=deployment
 CMD ["npm", "start"]
